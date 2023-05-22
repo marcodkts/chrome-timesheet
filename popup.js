@@ -63,11 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   configForm.addEventListener('submit', function(event) {
     event.preventDefault();
+    var apiUrl = apiUrlInput.value;
     var userId = userIdInput.value;
     var clientId = clientIdInput.value;
     var systemId = systemIdInput.value;
 
-    chrome.storage.sync.set({ userId, clientId, systemId }, function() {
+    chrome.storage.sync.set({ apiUrl, userId, clientId, systemId }, function() {
       console.log('Configuration values saved');
     });
 
