@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 200px;
+  position: relative;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#container {
+  position: relative;
+}
+
+#toggleButton {
+  position: fixed;
+  top: 0px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  background-image: url("assets/settings.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Time Sheet Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="timeSheetContainer">
+        <h1>Time Sheet</h1>
+        <form id="timeSheetForm">
+          <label for="startTime">Start Time:</label>
+          <input type="time" id="startTime" name="startTime" required />
+
+          <label for="endTime">End Time:</label>
+          <input type="time" id="endTime" name="endTime" required />
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <div id="configContainer">
+        <h1>Configuration</h1>
+        <form id="configForm">
+          <label for="userId">User ID:</label>
+          <input type="text" id="userId" name="userId" required />
+
+          <label for="clientId">Client ID:</label>
+          <input type="text" id="clientId" name="clientId" required />
+
+          <label for="systemId">System ID:</label>
+          <input type="text" id="systemId" name="systemId" required />
+
+          <button type="submit">Save Configuration</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
